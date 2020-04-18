@@ -35,8 +35,23 @@ device_configuration = {
 	"disconnect_after" : 20,  # (in seconds)
 	"throttleInterval" : 1000 # (in milliseconds)
 }
-sauver les modifications du fichier pour lancer la commande suivante :
+
+Sauver les modifications du fichier pour lancer la commande suivante :
 python -m app_device.send_xyz
+
+c:\Python38\iot-device-python-master>python -m app_device.send_xyz
+Wait 20 s (or press Ctrl+C to disconnect)
+
+2020-04-18 16:14:20,577   wiotp.sdk.device.client.DeviceClient  INFO    Connected successfully: d:uz6g30:MotionDevice:terminalPython
+Confirmed event at 0 ms, received by WIoTP
+
+Confirmed event at 1000 ms, received by WIoTP
+
+Confirmed event at 2000 ms, received by WIoTP
+
+Confirmed event at 3000 ms, received by WIoTP
+
+Confirmed event at 4000 ms, received by WIoTP
 
 
 
