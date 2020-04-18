@@ -6,6 +6,9 @@ https://www.python.org/downloads/
 Pré-requis : Installer l'extension pip
 Normallement cette extension est installée avec Python. Si cela n'est pas le cas : https://pip.pypa.io/en/latest/installing/
 
+Pour en savoir plus sur les installations de Python et pip :
+https://github.com/BurntSushi/nfldb/wiki/Python-&-pip-Windows-installation
+
 Vérifier que Python et pip sont correctement installés en lancant une invite de commandes.
 Taper sous l'invite de commande de votre machine les commandes : python -V et pip -V (versions 3.8.2 et 20.0.2)
 
