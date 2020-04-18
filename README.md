@@ -26,11 +26,11 @@ C:\Python38\iot-device-python-master
 Editer le fichier C:\Python38\iot-device-python-master\app_device\config_dev_copy.py et ajouter vos données de configuration de device crée sous la plate-forme Watson IoT sur votre compte IBM Cloud.
 
 device_configuration = {
-	"org_id"           : "abcd1z",             # replace with your organization ID
+	"org_id"           : "uz6g30",             # replace with your organization ID
 	"domain"           : "internetofthings.ibmcloud.com",
-	"device_type"      : "MotionDevice",       # replace with your device type ID
-	"device_id"        : "my-phone",           # replace with your device ID
-	"dev_auth_token"   : "$9HjMsPk8w1jVb7knd", # replace with your device token
+	"device_type"      : "LabPythonDevice",       # replace with your device type ID
+	"device_id"        : "IoTDevice1",           # replace with your device ID
+	"dev_auth_token"   : "430FEYckMPx5Ovw7mr", # replace with your device token
 	"qos"              : 2,
 	"disconnect_after" : 20,  # (in seconds)
 	"throttleInterval" : 1000 # (in milliseconds)
