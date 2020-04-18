@@ -1,6 +1,6 @@
 # iot-device-python
 
-Cet exercise permet d'envoyer des données simulées (x,y,z) depuis un programme Python vers un device crée avec la plate-forme Watson Internet of Things.
+Cet exercice permet d'envoyer des données simulées (x,y,z) depuis un programme Python vers un device crée avec la plate-forme Watson Internet of Things.
 
 Pré-requis : Installer Python sur votre ordinateur (PC, MAC)
 La dernière version en date du 18/04/2020 est la 3.8.2
