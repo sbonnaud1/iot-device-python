@@ -36,8 +36,7 @@ device_configuration = {
 	"throttleInterval" : 1000 # (in milliseconds)
 }
 
-Sauver les modifications du fichier pour lancer la commande suivante :
-python -m app_device.send_xyz
+Sauver les modifications du fichier puis lancer la commande suivante pour vérifier l'envoi des messages et leur réception dans la plate-forme : python -m app_device.send_xyz
 
 c:\Python38\iot-device-python-master>python -m app_device.send_xyz
 Wait 20 s (or press Ctrl+C to disconnect)
