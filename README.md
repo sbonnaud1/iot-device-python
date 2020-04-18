@@ -1,4 +1,7 @@
 # iot-device-python
+
+Cet exercise permet d'envoyer des données simulées (x,y,z) depuis un programme Python vers un device crée avec la plate-forme Watson Internet of Things.
+
 Pré-requis : Installer Python sur votre ordinateur (PC, MAC)
 La dernière version en date du 18/04/2020 est la 3.8.2
 https://www.python.org/downloads/
@@ -14,19 +17,20 @@ Taper sous l'invite de commande de votre machine les commandes : python -V et pi
 
 Normallement python s'est installé sous le répertoire c:\Python38 (sur PC Windows 10) et la variable PATH a été mise à jour (sous Windows)
 
-
 Sous l'invite de commande, faites les mises à jour suivantes et installer la librairie wiotp-sdk qui permet d'accéder depuis python à la plate-forme Watson IoT :
 
 pip install --upgrade pip 
 pip install wiotp-sdk 
 pip install --upgrade wiotp-sdk 
 
-Depuis le GitHub, télécharger le code source de l'exemple (ZIP) sur votre machine dans un répertoire de votre choix, dezipper le contenu et copier le répertoire 'iot-device-python-master' sous c:\python38\
+Depuis le GitHub, télécharger le code source de l'exemple (ZIP) sur votre machine dans un répertoire de votre choix, dezipper le contenu et copier le répertoire 'iot-device-python-master' sous c:\python38\ (Windows)
 
 Vous obtenez :
 C:\Python38\iot-device-python-master
 
-Editer le fichier C:\Python38\iot-device-python-master\app_device\config_dev_copy.py et ajouter vos données de configuration de device crée sous la plate-forme Watson IoT sur votre compte IBM Cloud.
+Editer le fichier C:\Python38\iot-device-python-master\app_device\config_dev_copy.py et ajouter vos données de configuration du device crée sous la plate-forme Watson IoT.
+
+Il est nécessaire d'avoir crée au préalable un type de device 'LabPythonDevice' et un device 'IoTDevice1' dans une instance de la plate-forme Watson Internet of Things avant de pouvoir exécuter le programme principal.
 
 device_configuration = {
 	"org_id"           : "uz6g30",             # replace with your organization ID
