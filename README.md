@@ -8,7 +8,11 @@ Normallement cette extension est installée avec Python. Si cela n'est pas le ca
 
 Vérifier que Python et pip sont correctement installés en lancant une invite de commandes.
 Taper sous l'invite de commande de votre machine les commandes : python -V et pip -V (versions 3.8.2 et 20.0.2)
+
 Normallement python s'est installé sous le répertoire c:\Python38 (sur PC Windows 10) et la variable PATH a été mise à jour (sous Windows)
+
+Télécharger le code source de l'exemple sur votre machine dans un répertoire de votre choix :
+Exemple : c:\python38\
 
 
 
