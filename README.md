@@ -28,9 +28,11 @@ Depuis le GitHub, télécharger le code source de l'exemple (ZIP) sur votre mach
 Vous obtenez :
 C:\Python38\iot-device-python-master
 
-Editer le fichier C:\Python38\iot-device-python-master\app_device\config_dev_copy.py et ajouter vos données de configuration du device crée sous la plate-forme Watson IoT.
+Editer le fichier C:\Python38\iot-device-python-master\app_device\config_dev.py et ajouter vos données de configuration du device crée sous la plate-forme Watson IoT.
 
 Il est nécessaire d'avoir crée au préalable un type de device 'LabPythonDevice' et un device 'IoTDevice1' dans une instance de la plate-forme Watson Internet of Things avant de pouvoir exécuter le programme principal.
+
+Remplacer dans le fichier config_dev.py les informations de connection (exemple ci-dessous) :
 
 device_configuration = {
 	"org_id"           : "uz6g30",             # replace with your organization ID
@@ -43,21 +45,31 @@ device_configuration = {
 	"throttleInterval" : 1000 # (in milliseconds)
 }
 
-Sauver les modifications du fichier puis lancer la commande suivante pour vérifier l'envoi des messages et leur réception dans la plate-forme : python -m app_device.send_xyz
+Sauver les modifications du fichier puis lancer la commande suivante sous le répertoire c:\Python38\iot-device-python-master afin de vérifier l'envoi des messages et leur réception dans la plate-forme : python -m app_device.send_xyz
 
 c:\Python38\iot-device-python-master>python -m app_device.send_xyz
 Wait 20 s (or press Ctrl+C to disconnect)
+2020-04-20 23:00:04,256   wiotp.sdk.device.client.DeviceClient  INFO    Connected successfully: d:uz6g30:LabPythonDevice:IoTDevice1
+Event 'a' {'x': -2.109541844739039, 'y': 1.263037762777719, 'z': 0.6850603004111173} sent to WIoTP
 
-2020-04-18 16:14:20,577   wiotp.sdk.device.client.DeviceClient  INFO    Connected successfully: d:uz6g30:MotionDevice:terminalPython
+Event 'o' {'g': 10, 'b': 8, 'a': 2} sent to WIoTP
 Confirmed event at 0 ms, received by WIoTP
-
+Confirmed event at 0 ms, received by WIoTP
+Event 'a' {'x': 0.4729797329721448, 'y': -0.019858572463314524, 'z': -1.9682053134574264} sent to WIoTP
+Event 'o' {'g': 10, 'b': 8, 'a': 2} sent to WIoTP
 Confirmed event at 1000 ms, received by WIoTP
-
+Confirmed event at 1000 ms, received by WIoTP
+Event 'a' {'x': -0.709192389465099, 'y': 0.9815754943629975, 'z': 0.24810549122793277} sent to WIoTP
+Event 'o' {'g': 10, 'b': 8, 'a': 2} sent to WIoTP
 Confirmed event at 2000 ms, received by WIoTP
-
+Event 'a' {'x': 1.9435167237400273, 'y': 1.1500987851196574, 'z': 0.3156225605864271} sent to WIoTP
+Event 'o' {'g': 10, 'b': 8, 'a': 2} sent to WIoTP
 Confirmed event at 3000 ms, received by WIoTP
-
+Confirmed event at 3000 ms, received by WIoTP
+Confirmed event at 3000 ms, received by WIoTP
+Event 'a' {'x': 0.6511059401626016, 'y': 1.7393710549308494, 'z': 0.9541822325687821} sent to WIoTP
+Event 'o' {'g': 10, 'b': 8, 'a': 2} sent to WIoTP
 Confirmed event at 4000 ms, received by WIoTP
-
+Confirmed event at 4000 ms, received by WIoTP
 
 
