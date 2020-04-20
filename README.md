@@ -53,23 +53,41 @@ Wait 20 s (or press Ctrl+C to disconnect)
 Event 'a' {'x': -2.109541844739039, 'y': 1.263037762777719, 'z': 0.6850603004111173} sent to WIoTP
 
 Event 'o' {'g': 10, 'b': 8, 'a': 2} sent to WIoTP
+
 Confirmed event at 0 ms, received by WIoTP
+
 Confirmed event at 0 ms, received by WIoTP
+
 Event 'a' {'x': 0.4729797329721448, 'y': -0.019858572463314524, 'z': -1.9682053134574264} sent to WIoTP
+
 Event 'o' {'g': 10, 'b': 8, 'a': 2} sent to WIoTP
+
 Confirmed event at 1000 ms, received by WIoTP
+
 Confirmed event at 1000 ms, received by WIoTP
+
 Event 'a' {'x': -0.709192389465099, 'y': 0.9815754943629975, 'z': 0.24810549122793277} sent to WIoTP
+
 Event 'o' {'g': 10, 'b': 8, 'a': 2} sent to WIoTP
+
 Confirmed event at 2000 ms, received by WIoTP
+
 Event 'a' {'x': 1.9435167237400273, 'y': 1.1500987851196574, 'z': 0.3156225605864271} sent to WIoTP
+
 Event 'o' {'g': 10, 'b': 8, 'a': 2} sent to WIoTP
+
 Confirmed event at 3000 ms, received by WIoTP
+
 Confirmed event at 3000 ms, received by WIoTP
+
 Confirmed event at 3000 ms, received by WIoTP
+
 Event 'a' {'x': 0.6511059401626016, 'y': 1.7393710549308494, 'z': 0.9541822325687821} sent to WIoTP
+
 Event 'o' {'g': 10, 'b': 8, 'a': 2} sent to WIoTP
+
 Confirmed event at 4000 ms, received by WIoTP
+
 Confirmed event at 4000 ms, received by WIoTP
 
 
