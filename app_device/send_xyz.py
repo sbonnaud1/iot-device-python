@@ -3,8 +3,9 @@ import signal
 import sys
 import uuid
 import argparse
+import random
 import wiotp.sdk
-from app_device.config_dev import device_configuration
+from app_device.config_dev_copy import device_configuration
 
 deviceConfig = {
 	"identity": {
@@ -33,17 +34,25 @@ print("Wait %s s (or press Ctrl+C to disconnect)\n" % device_configuration['disc
 
 deviceCli.connect()
 for x in range(0, device_configuration['disconnect_after']*1000, device_configuration['throttleInterval']):
-	data = {"x": 3.99, "y": 3.98, "z": 3.97}
+	dataA = {"x": random.gauss(0,1.5), "y": random.gauss(0,1.5), "z": random.gauss(0,1.5)}
+		# Note: 1.5 as deviation (width of the "bell") not too reach 4 too often...
+	dataO = {"g": 10, "b": 8, "a": 2}
 
 	def myOnPublishCallback():
 		print("Confirmed event at %s ms, received by WIoTP\n" % x)
 
-	success = deviceCli.publishEvent("a", "json", data, qos=2, onPublish=myOnPublishCallback)
-	if not success:
+	success = deviceCli.publishEvent("a", "json", dataA, qos=2, onPublish=myOnPublishCallback)
+	if success:
+		print("Event 'a' %s sent to WIoTP\n" % dataA)
+	else:
+		print("Not connected to WIoTP")
+	success = deviceCli.publishEvent("o", "json", dataO, qos=2, onPublish=myOnPublishCallback)
+	if success:
+		print("Event 'o' %s sent to WIoTP\n" % dataO)
+	else:
 		print("Not connected to WIoTP")
 
 	time.sleep(device_configuration['throttleInterval']/1000)
 
 # Disconnect the device and application from the cloud
 deviceCli.disconnect()
-
