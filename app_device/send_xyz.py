@@ -5,7 +5,7 @@ import uuid
 import argparse
 import random
 import wiotp.sdk
-from app_device.config_dev_copy import device_configuration
+from app_device.config_dev import device_configuration
 
 deviceConfig = {
 	"identity": {
