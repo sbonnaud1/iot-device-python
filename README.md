@@ -32,7 +32,7 @@ Editer le fichier C:\Python38\iot-device-python-master\app_device\config_dev.py 
 
 Il est nécessaire d'avoir crée au préalable un type de device 'LabPythonDevice' et un device 'IoTDevice1' dans une instance de la plate-forme Watson Internet of Things avant de pouvoir exécuter le programme principal.
 
-Remplacer dans le fichier config_dev.py les informations de connection (exemple ci-dessous) :
+Remplacer dans le fichier config_dev.py les informations de connection du device avec celles que vous avez récupérées lors de la création précédente du type et de l'instance du device (Exemple ci-dessous) :
 
 device_configuration = {
 	"org_id"           : "uz6g30",             # replace with your organization ID
@@ -48,6 +48,7 @@ device_configuration = {
 Sauver les modifications du fichier puis lancer la commande suivante sous le répertoire c:\Python38\iot-device-python-master afin de vérifier l'envoi des messages et leur réception dans la plate-forme : python -m app_device.send_xyz
 
 c:\Python38\iot-device-python-master>python -m app_device.send_xyz
+
 Wait 20 s (or press Ctrl+C to disconnect)
 2020-04-20 23:00:04,256   wiotp.sdk.device.client.DeviceClient  INFO    Connected successfully: d:uz6g30:LabPythonDevice:IoTDevice1
 Event 'a' {'x': -2.109541844739039, 'y': 1.263037762777719, 'z': 0.6850603004111173} sent to WIoTP
