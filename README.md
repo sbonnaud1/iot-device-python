@@ -19,9 +19,12 @@ Normallement python s'est installé sous le répertoire c:\Python39 (sur PC Wind
 
 Sous l'invite de commande, faites les mises à jour suivantes et installer la librairie wiotp-sdk qui permet d'accéder depuis python à la plate-forme Watson IoT :
 
-pip install --upgrade pip 
+pip install --upgrade pip
+
 pip install wiotp-sdk 
+
 pip install --upgrade wiotp-sdk 
+
 
 Depuis le GitHub, télécharger le code source de l'exemple (ZIP) sur votre machine dans un répertoire de votre choix, dezipper le contenu et copier le répertoire 'iot-device-python-master' sous c:\python39\ (Windows)
 
