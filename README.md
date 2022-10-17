@@ -1,6 +1,6 @@
 # iot-device-python
 
-Cet exercice permet d'envoyer des données simulées (x,y,z) depuis un simple programme Python executé sur un PC ou un Mac vers la plate-forme IBM Watson Internet of Things (WIoT P). Le PC ou le MAC joue ainsi le role du device simulé. La plate-forme WIoT P collecte les données et est crée un compte IBM Cloud, à partir du catalogue de service.
+Cet exercice permet d'envoyer des données simulées (x,y,z) depuis un simple programme Python executé sur un PC ou un Mac vers la plate-forme IBM Watson Internet of Things (WIoT P). Le PC ou le MAC joue ainsi le role du device simulé. La plate-forme WIoT P collecte les données et offre du dashboarding et des analytiques simples et des règles sur les données recues. Elle est crée depuis un compte IBM Cloud, à partir du catalogue de service.
 
 Pré-requis : Installer Python sur votre ordinateur (PC, MAC)
 https://www.python.org/downloads/
