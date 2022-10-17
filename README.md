@@ -1,9 +1,8 @@
 # iot-device-python
 
-Cet exercice permet d'envoyer des données simulées (x,y,z) depuis un simple programme Python vers un device crée avec la plate-forme IBM Watson Internet of Things sous votre compte IBM Cloud.
+Cet exercice permet d'envoyer des données simulées (x,y,z) depuis un simple programme Python executé sur un PC ou un Mac vers la plate-forme IBM Watson Internet of Things (WIoT P). Le PC ou le MAC joue ainsi le role du device simulé. La plate-forme WIoT P collecte les données et est crée un compte IBM Cloud, à partir du catalogue de service.
 
 Pré-requis : Installer Python sur votre ordinateur (PC, MAC)
-La dernière version téléchargeable est la 3.9.0
 https://www.python.org/downloads/
 
 Pré-requis : Installer l'extension pip
@@ -13,9 +12,9 @@ Pour en savoir plus sur les installations de Python et pip :
 https://github.com/BurntSushi/nfldb/wiki/Python-&-pip-Windows-installation
 
 Vérifier que Python et pip sont correctement installés en lancant une invite de commandes.
-Taper sous l'invite de commande de votre machine les commandes : python -V et pip -V (versions 3.9 et 20.0.2)
+Taper sous l'invite de commande de votre machine les commandes : python -V et pip -V.
 
-Normallement python s'est installé sous le répertoire c:\Python39 (sur PC Windows 10) et la variable PATH a été mise à jour (sous Windows). Dans tous les cas lors de l'installation de Python, vous pouvez choisir un répertoire de votre choix.
+Vérifier que Python s'est installé correctement et la variable PATH mise à jour (sous Windows). Dans tous les cas lors de l'installation de Python, vous pouvez choisir un répertoire de votre choix.
 
 Sous l'invite de commande, faites les mises à jour suivantes et installer la librairie wiotp-sdk qui permet d'accéder depuis python à la plate-forme Watson IoT :
 
@@ -25,8 +24,7 @@ pip install wiotp-sdk
 
 pip install --upgrade wiotp-sdk 
 
-
-Depuis le GitHub, télécharger le code source de l'exemple (ZIP) sur votre machine dans un répertoire de votre choix, dezipper le contenu et copier le répertoire 'iot-device-python-master' sous c:\python39\ (Windows)
+Depuis le GitHub, télécharger le code source de l'exemple (ZIP) sur votre machine dans un répertoire de votre choix, dezipper le contenu et copier le répertoire 'iot-device-python-master' dans un endroit de votre choix sur votre poste de travail.
 
 Vous obtenez par exemple :
 C:\Python39\iot-device-python-master
